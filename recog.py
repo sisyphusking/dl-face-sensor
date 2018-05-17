@@ -25,10 +25,10 @@ if __name__ == '__main__':
 
                 result = _predict(model, image)
                 if result == 0:  # boss
-                    print('Boss is approaching')
+                    print('someone is approaching')
                     show_image()
                 else:
-                    print('Not boss')
+                    print('Nobody')
 
         k = cv2.waitKey(100)
         if k == 27:

@@ -119,9 +119,3 @@ def data_set(path, img_rows=IMAGE_SIZE, img_cols=IMAGE_SIZE, img_channels=3, nb_
     X_test /= 255
 
     return (X_train, Y_train), (X_valid, Y_valid), (X_test, Y_test)
-
-
-if __name__ == '__main__':
-
-    images, labels = data_set('data')[0]
-    print(images[0])

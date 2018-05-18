@@ -87,12 +87,3 @@ def plot(model):
     from keras.utils.vis_utils import plot_model
     plot_model(model, to_file="model.png", show_shapes=True)
     Image('model.png')
-
-
-if __name__ == '__main__':
-
-    data = data_set('data/')
-    model = cnn_model(data)
-    plot(model)
-    model = train(data, model)
-    evaluate(model, data)

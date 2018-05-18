@@ -22,7 +22,3 @@ def show_image(image_path='screen.png'):
     screen.showMaximized()
     # screen.showNormal()
     app.exec()
-
-
-if __name__ == '__main__':
-    show_image()

@@ -1,9 +1,8 @@
-import numpy as np
 import cv2
 import time
 
 
-def gen_pic():
+def gen(path):
 
     cap = cv2.VideoCapture(0)  # 从摄像头中取得视频
     while (cap.isOpened()):
@@ -11,7 +10,7 @@ def gen_pic():
         ret, frame = cap.read()
         if ret == True:
             pic_name = str(int(round(time.time() * 1000))) + ".jpg"
-            pic = 'data/' + pic_name
+            pic = path + pic_name
             cv2.imwrite(pic, frame)
             # 键盘按 Q 退出
             if (cv2.waitKey(1) & 0xFF) == ord('q'):
@@ -21,6 +20,3 @@ def gen_pic():
     cap.release()
     cv2.destroyAllWindows()
 
-
-if __name__ == '__main__':
-    gen_pic()

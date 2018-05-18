@@ -1,3 +1,9 @@
+
+### 简介
+
+基于卷积神经网络和opencv的人脸识别框架，开发的自动检测人脸，然后将屏幕切换到指定画面的应用。
+
+
 ####  安装OpenCV库
 - 安装opencv库，`brew install opencv3`
 - 创建virtualenv虚拟环境venv

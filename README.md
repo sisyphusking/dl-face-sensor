@@ -1,8 +1,7 @@
 ####  安装OpenCV库
-- `brew install opencv3`，安装opencv库
+- 安装opencv库，`brew install opencv3`
 - 创建virtualenv虚拟环境venv
-- 进入 `venv/lib/python3.6/site-packages`目录下
-- 执行以下命令建立软连接
+- 进入 `venv/lib/python3.6/site-packages`目录下，执行以下命令建立软连接
 ```
 # 实际中需要看下具体版本和路径
 ln -s /usr/local/Cellar/opencv/3.4.1_5/lib/python3.6/site-packages/cv2.cpython-36m-darwin.so  cv2.so
@@ -21,7 +20,7 @@ brew install PyQt5
 
 #### 准备数据
 - 在根目录下新建data文件夹，将训练图片放到改文件夹下，照片以.jpg结尾，或者按照下面的方式从视频流中截取图片
-- ，运行`test_gen_pic.py`来生成图片
+- 运行`test_gen_pic.py`来生成图片
 
 #### 训练数据
 

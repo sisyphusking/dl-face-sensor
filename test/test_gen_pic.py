@@ -1,7 +1,5 @@
-import gen_pic
+from gen_pic import gen
 import unittest
-import sys
-sys.path.append('../')
 
 
 class TestGen(unittest.TestCase):
@@ -9,4 +7,4 @@ class TestGen(unittest.TestCase):
     def test_gen(self):
         print('init....')
         path = '/Users/yinxingwei/Documents/deeplearning/BossSensor/data/'
-        gen_pic.gen(path)
+        gen(path)
